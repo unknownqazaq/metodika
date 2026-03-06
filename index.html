@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Методика обучения игре на скрипке</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+</head>
+<body>
+<div id="page">
+<div id="header">
+<div class="left">
+<h1 id="logo"><a href="index.html">Электронное учебное пособие</a></h1>
+</div>
+<div id="navigation">
+<ul>
+<li><a href="all.html">Содержание методики</a></li>
+<li class="last"><a href="author.html">От Автора</a></li>
+</ul>
+</div>
+</div>
+
+<div id="slider-frame">
+<div id="slider">
+<ul>
+<li>
+  <div class="image"><img src="css/images/slide-image1.jpg" alt="" /></div>
+  <div class="caption"></div>
+</li>
+</ul>
+</div>
+</div>
+  
+<div id="main">
+<div class="quote">
+<div class="inner">
+<h2 class="title">Сколько ни подчеркивай значение первых простейших шагов долгого процесса овладения скрипкой, нет опасности преувеличить его. К лучшему или к худшему, но привычки, усвоенные в ранний период обучения, влияют непосредственно на все дальнейшее развитие учащегося " Л.Ауэр</h2>
+</div>
+</div>
+
+<div class="box1">
+<div class="t">&nbsp;</div>
+<div class="cnt">
+<div class="cols">
+
+<div class="col">
+<div class="content">
+<h3><a href="lekcii.html">Лекции</a></h3><br /><br />
+<h3><a href="fonohr.html">Фонохрестоматия</a></h3><br /><br />
+<h3><a href="metlit.html">Методическая литература</a></h3>
+</div>
+</div>
+					
+<div class="col">
+<div class="content">
+<h3><a href="mastkl.html">Мастер-класс</a></h3><br /><br />
+<h3><a href="detrep.html">Детский репертуар в исполнении выдающихся скрипачей</a></h3>
+</div>
+</div>
+
+<div class="col last">
+<h3>Аудио материалы</h3>
+<div class="content">
+<br /><br />
+<audio id="bg-audio" loop preload="auto">
+  <source src="audio/Adagio.mp3" type="audio/mpeg" />
+  Тег audio не поддерживается вашим браузером. Воспользуйтесь другим.
+</audio>
+
+<div style="margin-top:10px;">
+  <button id="play-audio-btn" type="button" style="padding:6px 10px; cursor:pointer;">
+    🎵 Включить музыку
+  </button>
+</div>
+
+<p align="left" style="margin-top:10px;">Моцарт, Вольфганг Амадей - Adagio</p><br />
+
+</div>
+</div>
+<div class="cl">&nbsp;</div>
+</div>
+</div>
+<div class="b">&nbsp;</div>
+</div>
+</div>
+	
+<div id="footer">
+<p class="bottom-nav">
+<a href="index.html">Главная</a> | 
+<a href="about.html">О методичке</a>
+</p>
+<p class="copyright">Все права защищены &copy;</p>
+<div class="cl">&nbsp;</div>
+</div>
+</div>
+<script type="text/javascript">
+(function () {
+  var audio = document.getElementById('bg-audio');
+  var btn = document.getElementById('play-audio-btn');
+
+  function startAudio() {
+    if (!audio) return;
+    audio.play().then(function () {
+      if (btn) btn.style.display = 'none';
+    }).catch(function () {
+      // autoplay blocked
+    });
+  }
+
+  if (btn) {
+    btn.onclick = startAudio;
+  }
+  document.addEventListener('click', function () {
+    startAudio();
+  }, { once: true });
+})();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

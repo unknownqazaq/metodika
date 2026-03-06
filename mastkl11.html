@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Методика обучения игре на скрипке</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<style>
+.plyr__video-embed iframe {
+    top: -80px !important;
+    height: calc(100% + 160px) !important;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+<script type="text/javascript">
+	$(function() {
+		var offset = $("#fixed").offset();
+		var topPadding = 15;
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > offset.top) {
+				$("#fixed").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
+			}
+			else {$("#fixed").stop().animate({marginTop: 0});};});
+	});
+</script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+<div class="left">
+<h1 id="logo"><a href="index.html">Методика обучения игре на скрипке</a></h1>
+</div>
+<div id="navigation">
+<ul>
+<li><a href="index.html">Главная страница</a></li>
+<li class="last"><a href="author.html">От Автора</a></li>
+</ul>
+</div>
+</div>
+
+<div id="main">
+
+<div class="box">
+<div class="t">&nbsp;</div>
+<div class="cnt">
+<div class="cols">
+
+<div class="col3">
+<div class="content3">
+
+<h3>С.Шальман Я буду скрипачом. Штрихи- 3 часть</h3>
+<br />
+
+<div style="width:960px; max-width:100%;">
+<div id="player" data-plyr-provider="youtube" data-plyr-embed-id="mrKl102pGak"></div>
+</div>
+
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+const player = new Plyr('#player', {
+    controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+    settings: ['quality'],
+    fullscreen: {
+        enabled: true,
+        fallback: true,
+        iosNative: false
+    },
+    youtube: {
+        noCookie: true,
+        rel: 0,
+        showinfo: 0,
+        modestbranding: 1,
+        controls: 0,
+        iv_load_policy: 3,
+        disablekb: 1
+    }
+});
+</script>
+
+<br />
+<br />
+<br />
+<br />
+<a href = "javascript:history.back()"><h4>&#9668; НАЗАД</h4></a>
+<br />
+</div>
+</div>
+					
+<div class="col last">
+<div id="fixed">
+<h3>Навигация</h3>
+<div class="content">
+<br />
+<h4><a href="lekcii.html">Лекции</a></h4><br />
+<h4><a href="fonohr.html">Фонохрестоматия</a></h4><br />
+<h4><a href="metlit.html">Методическая литература</a></h4><br />
+<h4><a href="mastkl.html">Мастер-класс</a></h4><br />
+<h4><a href="detrep.html">Детский репертуар в исполнении выдающихся скрипачей</a></h4>
+</div>
+</div>
+</div>
+
+<div class="cl">&nbsp;</div>
+</div>
+</div>
+<div class="b">&nbsp;</div>
+</div>
+</div>
+	
+<div id="footer">
+<p class="bottom-nav">
+<a href="index.html">Главная</a> | 
+<a href="about.html">О методичке</a>
+</p>
+<p class="copyright">Все права защищены &copy;</p>
+<div class="cl">&nbsp;</div>
+</div>
+</div>
+</body>
+</html>
