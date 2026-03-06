@@ -48,7 +48,7 @@ h1#logo a { color: #ffffff; text-decoration: none; }
 #navigation a:hover,
 #navigation a.active { text-decoration: underline; }
 
-#slider-frame { width: 940px; height: 280px; padding:11px; background: url(images/slider-frame.png); } 
+#slider-frame { width: 940px; height: 280px; padding: 0; background: none; } 
 #slider, 
 #slider .jcarousel-clip { width: 940px; height: 280px; position:relative; overflow: hidden; }
 #slider ul { height: 280px; position:relative; overflow: hidden; list-style: none; }
@@ -70,8 +70,8 @@ h1#logo a { color: #ffffff; text-decoration: none; }
 h2.title { font: italic normal normal 18px/30px 'Georgia', serif; padding-bottom: 45px; }
 
 .quote { padding: 8px 0 18px 55px; background: url(images/left-quote.png) no-repeat 0 0; margin-left:15px; }
-.quote .inner { padding: 0 35px 0 0; background: url(images/right-quote.png) no-repeat right bottom; margin-right: 15px; }
-.quote h2 { padding-bottom:0 !important; font-size: 16px; }
+.quote .inner { padding: 0 35px 30px 0; background: url(images/right-quote.png) no-repeat right bottom; margin-right: 15px; }
+.quote h2 { padding-bottom: 40px; font-size: 16px; }
 
 .box { width: 962px; }
 .box .t { height: 16px; background: url(images/box-t.png) no-repeat 0 0; }
@@ -135,10 +135,11 @@ h2.title { font: italic normal normal 18px/30px 'Georgia', serif; padding-bottom
 @media screen and (max-width: 980px) {
   #page { padding: 0 15px; }
   .box, .box1 { width: 100%; }
-  #slider-frame { width: 100%; box-sizing: border-box; }
+  #slider-frame { width: 100%; box-sizing: border-box; background-size: 100% 100%; }
   #slider, #slider .jcarousel-clip { width: 100%; }
   #slider li { width: 100%; }
   #slider .image img { width: 100%; height: auto; }
+  #slider .caption:empty { display: none; }
   #ind1 { width: 100%; height: auto; }
   #ind1 img { max-width: 100%; height: auto; box-sizing: border-box; }
 }
@@ -151,14 +152,14 @@ h2.title { font: italic normal normal 18px/30px 'Georgia', serif; padding-bottom
   #navigation li { height: auto; margin-right: 10px; }
   #navigation a { line-height: 2; font-size: 12px; }
 
-  #slider-frame { height: auto; padding: 5px; }
+  #slider-frame { height: auto; padding: 5px; background: none; }
   #slider, #slider .jcarousel-clip { height: auto; }
   #slider li { height: auto; }
-  #slider .caption { padding: 15px; position: static; }
+  #slider .caption { padding: 0; position: static; }
 
-  .quote { padding-left: 20px; margin-left: 0; }
-  .quote .inner { margin-right: 0; padding-right: 10px; }
-  .quote h2 { font-size: 14px; }
+  .quote { padding: 40px 0 18px 55px; margin-left: 0; }
+  .quote .inner { margin-right: 0; padding-right: 10px; padding-bottom: 30px; }
+  .quote h2 { font-size: 14px; padding-bottom: 30px; }
 
   .box .cnt, .box1 .cnt { padding: 5px 15px 15px; }
   .box .col, .box1 .col { float: none; width: 100%; margin-right: 0; margin-bottom: 15px; }
